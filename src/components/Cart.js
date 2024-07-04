@@ -1,10 +1,6 @@
 export class Cart {
     #products = [];
 
-    constructor(options) {
-        
-    }
-
     add(products) {
         this.#products.push(...products);
     }
@@ -17,6 +13,10 @@ export class Cart {
         this.#products = [];
     }
 
+    get() {
+        return [...this.#products]
+    }
+    
     get sum() {
         return this.#products.reduce((sum, { price }) => sum + price, 0);
     }

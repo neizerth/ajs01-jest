@@ -40,7 +40,7 @@ describe('cart module', () => {
         expect(cart.length).toBe(0);
     });
 
-    test('can calculate total summ', () => {
+    test('can calculate total sum', () => {
         cart.add(products);
 
         expect(cart.length).toBe(2);
