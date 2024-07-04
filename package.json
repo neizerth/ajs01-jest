@@ -1,0 +1,17 @@
+{
+  "name": "ajs01-jest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "npx ./src/index.js",
+    "test": "npx cross-env NODE_OPTIONS=--experimental-vm-modules jest ./src"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
